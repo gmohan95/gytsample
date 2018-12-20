@@ -84,7 +84,7 @@
 }
 
 .sidenav {
-    height: 100%;
+    /* height: 100%; */
     width: 0;
     position: fixed;
     z-index: 1;
@@ -183,7 +183,7 @@ mat-icon.example-icon.mat-icon.material-icons {
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
 }
 
@@ -208,9 +208,6 @@ mat-icon.example-icon.mat-icon.material-icons {
     line-height: 1.3em;
 }
 
-a.helpbutton {
-    padding: 16px !important;
-}
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
@@ -243,14 +240,21 @@ a.helpbutton {
 
 .sidenavbar a:hover {
     background-color: #7c4dff;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.sidenavbar a {
+    padding: 12px ;
+    font-size: 1rem;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.navbar-brand {
+/* .navbar-brand {
     padding-top: 0.63125rem !important;
     padding-bottom: .6125rem !important;
     font-size: 16px !important;
-}
+} */
