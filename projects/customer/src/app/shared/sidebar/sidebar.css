@@ -146,6 +146,9 @@
     padding-left: 8px;
 }
 
+mat-icon.example-icon.mat-icon.material-icons {
+    padding-top: 11px;
+}
 
 
 /* Some media queries for responsiveness */
@@ -198,7 +201,7 @@
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 12px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -226,10 +229,12 @@ a.helpbutton {
 .dropdown-content a {
     float: none;
     color: black;
-    padding: 12px 16px;
+    padding: 5px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+    background-color: white !important;
+    border-bottom: 1px solid #ddd;
 }
 
 .dropdown-content a:hover {
