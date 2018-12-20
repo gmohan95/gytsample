@@ -1,0 +1,256 @@
+/* Fixed sidenav, full height */
+
+@import url("https://use.fontawesome.com/releases/v5.6.1/css/all.css");
+.ressidebar {
+    width: 50%;
+}
+
+.ulwidth {
+    display: block;
+}
+
+.ulwidthss {
+    display: none;
+}
+
+.bgclr {
+    background-color: steelblue;
+}
+
+
+/*layout*/
+
+.logo {
+    display: flex;
+    background: #de4b4c;
+    align-items: center;
+    padding: 18px 15px;
+}
+
+.txt-grey {
+    color: #c2c5ca;
+}
+
+.app-download img {
+    width: 60px;
+}
+
+.app-download {
+    font-size: 18px !important;
+    border: 0 !important;
+}
+
+.sec-nav {
+    border-top: 2px solid #202832;
+    padding: 0px 21px;
+}
+
+.txt-white {
+    color: #fff;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.highlightlower {
+    font-size: small;
+}
+
+
+/* Optional: Style the caret down icon */
+
+.fa-caret-down {
+    padding-left: 8px;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .ressidebar {
+        width: 30%;
+    }
+    /* .ulwidth {
+        width: 30%;
+    } */
+    .padtop {
+        padding-top: 25px;
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #354050;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav>a.profile-set {
+    padding: 25px 9px 25px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidenav>a.profile-set span {
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.sidenav>a {
+    padding: 20px 8px 20px 20px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 2px solid #202832;
+    width: 295px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    right: 5px;
+    font-size: 36px;
+    float: right;
+    color: #fff;
+    padding: 5px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+mat-icon.example-icon.mat-icon.material-icons {
+    padding-top: 11px;
+}
+
+
+/* Some media queries for responsiveness */
+
+@media screen and (max-height: 450px) {
+    /* .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    } */
+    .textcolor-font {
+        color: white;
+        font-weight: 500;
+    }
+}
+
+.textcolor-font {
+    color: white;
+    font-weight: 500;
+}
+
+.navbar {
+    overflow: hidden;
+    width: 100%;
+    /* background-color: #333; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar div {
+    float: left;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    line-height: 1.3em;
+}
+
+a.helpbutton {
+    padding: 16px !important;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #7c4dff;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: white !important;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1 !important;
+}
+
+.sidenavbar a:hover {
+    background-color: #7c4dff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar-brand {
+    padding-top: 0.63125rem !important;
+    padding-bottom: .6125rem !important;
+    font-size: 16px !important;
+}
