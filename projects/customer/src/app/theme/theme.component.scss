@@ -1,0 +1,22 @@
+.merchant-wrapper {
+    width: 162px;
+    display: inline-block;
+    margin: 0 15px 20px 0;
+    vertical-align: top;
+    transition: margin 400ms linear;
+    & .content {
+        border: 1px solid #d9d9d9;
+        text-align: left;
+        padding: 8px;
+        border-radius: 4px;
+        background-color: #fff;
+        &:hover {
+            border: 1px solid #8491a0;
+        }
+        & img {
+            width: 144px;
+            height: 144px;
+            border: solid 1px #eceef1;
+        }
+    }
+}
