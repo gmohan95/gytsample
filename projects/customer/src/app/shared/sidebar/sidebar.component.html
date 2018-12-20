@@ -1,75 +1,68 @@
 <div [class]="mobileQuery.matches ? 'ulwidth' : 'ulwidthss'">
-    <mat-toolbar class="sidenavbar" color='primary'>
+    <mat-toolbar class="" color='primary'>
         <mat-toolbar-row>
             <a class="navbar-brand textcolor-font">
                 <mat-icon class="example-icon" (click)="open()"><i style="font-size: 35px;" class="material-icons">reorder</i>
                 </mat-icon>
             </a>
-            <a class="navbar-brand textcolor-font" [routerLink]="['/home/mywallet']">My Wallet</a>
-            <a class="navbar-brand textcolor-font" [routerLink]="['/home/mygiftcards']">Buy Gift Cards</a>
+            <!-- <a class="navbar-brand textcolor-font" [routerLink]="['/home/mywallet']">My Wallet</a>
+            <a class="navbar-brand textcolor-font" [routerLink]="['/home/mygiftcards']">Buy Gift Cards</a> -->
         </mat-toolbar-row>
     </mat-toolbar>
 </div>
 <div [class]="mobileQuery.matches ? 'ulwidthss' : 'ulwidth'">
-    <mat-toolbar class="" color='primary'>
-        <mat-toolbar-row>
-            <div class="navbar container">
-                <div class="pull-left">
-                    <a class=" textcolor-font ">GYFT</a>
-                    <a class="active" [routerLink]="['/home/mywallet']">My Wallet</a>
-                    <a class="" [routerLink]="['/home/mygiftcards']">Buy Gift Cards</a>
-                </div>
-                <div class="pull-right ">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            <div class="highlightlower">Hi Pappie!</div> <br /> Account<i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#"><i class="fas fa-user-alt "></i><span class="ml-3 txt-grey">Profile</span></a>
-                            <a href="#"><i class="fa fa-history "></i><span class="ml-3 txt-grey">Order History</span></a>
-                            <a href="#"><i class="fa fa-paper-plane "></i><span class="ml-3 txt-grey">Track Sent Cards</span></a>
-                            <a href="#"><i class="far fa-folder "></i><span class="ml-3 txt-grey">Archived Cards</span></a>
-                            <a href="#"><i class="fa fa-bell "></i><span class="ml-3 txt-grey">Notifications</span></a>
-                            <a href="#"><i class="fas fa-gift "></i><span class="ml-3 txt-grey">Redeem Gyft Card</span></a>
-                            <a href="#"><i class="far fa-smile "></i><span class="ml-3 txt-grey">Claim Reward Code</span></a>
-                            <a href="#"><i class="far fa-question-circle "></i><span class="ml-3 txt-grey">Help Center</span></a>
-                            <a href="#"><i class="fas fa-sign-out-alt "></i><span class="ml-3 txt-grey">Logout</span></a>
-                        </div>
-                    </div>
-                    <a class="helpbutton" [routerLink]="['/home/mygiftcards']">Help <i class="fa fa-question-circle"></i></a>
+  <mat-toolbar class="" color='primary'>
+  <mat-toolbar-row>
+  <div class="navbar ">
+  <div class="pull-left">
+  <a class="navbar-brand textcolor-font ">GYFT</a>
+  <a class="active" [routerLink]="['/home/mywallet']">My Wallet</a>
+  <a class="" [routerLink]="['/home/mygiftcards']">Buy Gift Cards</a>
+  </div>
+  <div class="pull-right ">
+  <div class="dropdown">
+  <button class="dropbtn"><div class="highlightlower">Hi Pappie!</div> <br/> Account<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+  </div>
+  <a class="" [routerLink]="['/home/mygiftcards']">Help <i class="fa fa-question-circle"></i></a>
 
-                </div>
+  </div>
 
-            </div>
-        </mat-toolbar-row>
-    </mat-toolbar>
+  </div>
+  </mat-toolbar-row>
+  </mat-toolbar>
     <!-- <router-outlet></router-outlet> -->
 </div>
 <div id="mySidenav" class="sidenav">
-    <div class="logo">
-        <img src="assets/images/logo.png" />
-        <a href="javascript:void(0)" class="closebtn" (click)="close()">&times;</a>
+  <div class="logo">
+  <img src="assets/images/logo.png" />
+    <a href="javascript:void(0)" class="closebtn" (click)="close()">&times;</a>
     </div>
     <a href="#" class="profile-set">
-        <i class="fas fa-user-circle fa-3x txt-grey"></i>
-        <span>Pappie</span>
+  <i class="fas fa-user-circle fa-3x txt-grey"></i>
+  <span>Pappie</span>
     </a>
     <a href="#"><i class="fas fa-user-alt txt-grey"></i><span class="ml-3">Account Profile</span></a>
     <a href="#"><i class="far fa-question-circle txt-grey"></i><span class="ml-3">Help Center</span></a>
     <a href="#"><i class="far fa-folder txt-grey"></i><span class="ml-3">Archived Cards</span></a>
     <a href="#"><i class="fas fa-gift txt-grey"></i><span class="ml-3">Redeem Gyft Card</span></a>
-    <a href="#"><i class="far fa-smile txt-grey"></i><span class="ml-3">Claim Reward Code</span></a>
-    <a href="#"><i class="fas fa-sign-out-alt txt-grey"></i><span class="ml-3">Logout</span></a>
+    <a href="#"><i class="far fa-smile"></i><span class="ml-3">Claim Reward Code</span></a>
+      <a href="#"><i class="fas fa-sign-out-alt"></i><span class="ml-3">Logout</span></a>
 
 
-    <a href="#" class="app-download"><img src="assets/images/ios.png" /> Get the iOS App</a>
-    <a href="#" class="app-download"><img src="assets/images/android.png" /> Get the Android App</a>
-    <ul class="nav navbar sec-nav">
-        <li><a href="#" class="text-center">Terms</a></li>
-        <li><a href="#" class="text-center">Privacy</a></li>
-        <li><a href="#" class="text-center">Contact</a></li>
-    </ul>
-    <p class="text-center txt-white">&copy; 2018 Gyft, Inc. All rights reserved.</p>
+      <a href="#" class="app-download"><img src="assets/images/ios.png" /> Get the iOS App</a>
+      <a href="#" class="app-download"><img src="assets/images/android.png" /> Get the Android App</a>
+<ul class="nav navbar sec-nav">
+  <li><a href="#" class="text-center">Terms</a></li>
+    <li><a href="#" class="text-center">Privacy</a></li>
+      <li><a href="#" class="text-center">Contact</a></li>
+  </ul>
+  <p class="text-center txt-white">&copy; 2018 Gyft, Inc. All rights reserved.</p>
 </div>
 <div class="main">
     <router-outlet></router-outlet>

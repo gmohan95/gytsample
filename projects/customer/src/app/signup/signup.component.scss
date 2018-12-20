@@ -1,0 +1,158 @@
+main.login-bg {
+  background: #515864 url(../../assets/images/bgpRegister.jpg) fixed no-repeat;
+  background-size: cover;
+ min-height: 100vh;
+  padding: 30px 0px;
+  }
+
+.login-panel {
+height:100%;
+max-width: 420px;
+background: #fff;
+border-top: 5px solid #dd4b4c;
+margin: 0 auto 40px;
+padding: 15px 46px 25px;
+text-align: center;
+background: #fff;
+border-radius: 0 0 5px 5px;
+}
+
+.logo {
+    margin: auto;
+    padding: 30px 0;
+    width: 35%;
+}
+.logo.red path {
+    fill: #dd4b4c;
+}
+
+.login-panel .section-title {
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 16px 0 5px;
+    clear: both;
+    color: #34404f;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.or-wrapper{
+margin: 0 auto;
+position: relative;
+}
+.or-wrapper div.sep {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 90;
+    border-top: 1px dashed #d2d7dd;
+}
+
+.or-wrapper p {
+    position: relative;
+    display: inline-block;
+    margin: 5px 0;
+    padding: 0 10px;
+    color: #8491a0;
+    font-weight: 600;
+    line-height: 55px;
+    text-transform: uppercase;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.social:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.social .facebook {
+    background-position: left top;
+}
+
+.social .google {
+    background-position: left -51px;
+}
+
+.btn-social{
+    display: inline-block;
+    width: 142px;
+    height: 41px;
+    margin: 0px 5px 26px;
+    padding: 0 !important;
+    background-image: url(../../assets/images/login.png);
+    background-repeat: no-repeat;
+    background-size: calc(100% + 5px) auto;
+}
+.existingAccount {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.existingAccount a, .neverShare a {
+    color: #1eaca5;
+    text-decoration: none;
+    -webkit-transition: color 0.15s ease-out;
+    -moz-transition: color 0.15s ease-out;
+    -ms-transition: color 0.15s ease-out;
+    -o-transition: color 0.15s ease-out;
+    transition: color 0.15s ease-out;
+}
+
+.existingAccount a:hover, .neverShare a:hover{
+  color:#178680;
+}
+
+.neverShare{
+color: #8491a0;
+font-size: 12px;
+font-weight: 500;
+text-align: center;
+}
+
+.appIcons{margin: 50px auto 0px auto;}
+
+.appIcons a {
+  display: inline-block;
+  width: 135px;
+  height: 40px;
+  margin: 0 10px 20px;
+  background-image: url(../../assets/images/login.png);
+  background-size: 135px auto;
+  background-repeat: no-repeat;
+}
+.itunes{
+  background-position: 0 -92px;
+}
+
+.play{
+    background-position: 0 -141px;
+}
+
+p.copy {
+    padding: 0px 10px;
+    color: #f3f5f7;
+    float: left;
+display: inline-block;
+font-size: 13px;
+}
+
+footer ul {
+    float: right;
+    display: inline-block;
+    height: 20px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: #f3f5f7;
+    font-size: 13px;
+    line-height: 24px;
+}

@@ -84,6 +84,9 @@ padding-left: 8px;
         width: 295px;
 }
 
+.sidenav a:hover {
+    color: #f1f1f1;
+}
 
 .sidenav .closebtn {
   position: absolute;
@@ -110,9 +113,7 @@ padding-left: 8px;
     background-color: #262626;
     padding-left: 8px;
 }
-mat-icon.example-icon.mat-icon.material-icons {
-    padding-top: 11px;
-}
+
 
 
 /* Some media queries for responsiveness */
@@ -122,11 +123,7 @@ mat-icon.example-icon.mat-icon.material-icons {
         padding-top: 15px;
     }
     .sidenav a {
-        font-size: 16px !important;
-    }
-    .textcolor-font {
-        color: white;
-        font-weight: 500;
+        font-size: 18px;
     }
 }
 
@@ -165,15 +162,13 @@ mat-icon.example-icon.mat-icon.material-icons {
     border: none;
     outline: none;
     color: white;
-    padding: 12px 16px;
+    padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
     line-height: 1.3em;
 }
-a.helpbutton{
-    padding: 16px !important;
-}
+
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     background-color: red;
@@ -191,26 +186,16 @@ a.helpbutton{
 .dropdown-content a {
     float: none;
     color: black;
-    padding: 5px 16px;
+    padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-    background-color: white !important;
-    border-bottom: 1px solid #ddd;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1 !important;
-}
-.sidenavbar a:hover {
-    background-color: red;
+    background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-.navbar-brand {
-    padding-top: 0.63125rem !important;
-    padding-bottom: .6325rem !important;
-    font-size: 16px !important; 
 }

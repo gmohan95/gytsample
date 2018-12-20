@@ -1,3 +1,99 @@
-<p>
-  signup works!
+<main class="login-bg">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="login-panel">
+
+<svg class="logo red" viewBox="0 0 151 100.3">
+  <path d="M124.6,12.6c0,0-11.2,0.2-11.2,11.7h11.2V38h-11.5v37.8h-12.6V25.1C100.6,11.2,112,0,124.6,0V12.6z M15.5,84.1 c2.2,2.3,4.8,3.7,8.1,3.7c6.6,0,11.6-5.7,11.6-12.6v-3.2c-2.3,2.2-7.2,3.4-11.6,3.4C10.5,75.3,0,64.1,0,50.2 c0-13.9,10.4-25.1,23.5-25.1c4.4,0,9.4,1.2,11.7,3.4v-4.3h12.6v26v24.9c0,13.9-10.7,25.1-23.8,25.1c-6.6,0-12.5-2.8-16.8-7.4 L15.5,84.1z M25,37.6c-6.6,0-12,5.7-12,12.6c0,7,5.4,12.6,12,12.6c6.6,0,12-5.7,12-12.6C37,43.2,31.6,37.6,25,37.6 M50.1,24.3h12.6 v26c0,7,4.9,12.6,11.5,12.6c6.6,0,11.5-5.7,11.5-12.6v-26h12.6v26v24.9c0,13.9-11.5,25.1-24.1,25.1V87.8c6.9,0,11.5-5.7,11.5-12.6 v-3.2c-2.3,2.2-7.5,3.4-11.9,3.4c-13.1,0-23.7-11.2-23.7-25.1V24.3z M139.5,0.2h-11.5v50c0,13.9,10.3,25.1,22.9,25.1V62.8 c-5.7,0-11.5-5.6-11.5-12.6V38H151V24.3h-11.5V0.2z"></path>
+</svg>
+
+<h1 class="section-title">
+  It's Easy To Get Started And It's Free!
+</h1>
+
+<form [formGroup]="singUpForm" class="no-rad mt-3" (ngSubmit)="signUp()">
+
+  <div class="form-group">
+      <input type="text" formControlName="firstname" placeholder="Firstname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }" />
+      <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback text-left">
+          <div *ngIf="f.firstname.errors.required">FirstName is required</div>
+      </div>
+  </div>
+
+  <div class="form-group">
+      <input type="text" formControlName="lastname" placeholder="LastName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }" />
+      <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback text-left">
+          <div *ngIf="f.lastname.errors.required">LastName is required</div>
+      </div>
+  </div>
+
+                <div class="form-group">
+                    <input type="email" formControlName="email" placeholder="Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback text-left">
+                        <div *ngIf="f.email.errors.required">Email is required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="password" minlength=6 formControlName="password" placeholder="Password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                    <div *ngIf="submitted && f.password.errors" class="invalid-feedback text-left">
+                        <div *ngIf="f.password.errors.required">Password is required</div>
+                          <div *ngIf="f.password.errors.minlength">minLength of 6 required</div>
+                    </div>
+                </div>
+
+                  <button type="submit" [disabled]="disabled" class="btn btn-branded">Sign Up with Email</button>
+
+            </form>
+
+
+
+<div class="or-wrapper">
+	<div class="sep"></div>
+	<p>or connect with</p>
+</div>
+
+<div class="social">
+	<a class="btn btn-social facebook"></a>
+	<div class="btn btn-social google"></div>
+</div>
+
+<p class="existingAccount">Already have an account? <a routerLink="/signin" >Log in now.</a></p>
+
+<p class="neverShare">
+	By signing up you agree to our <a target="_blank" href="http://gyft.com/terms-of-service/">Terms of Service.</a><br>
+	P.S. We'll never share your information.
 </p>
+
+<div class="appIcons">
+<a href="http://itunes.apple.com/us/app/gyft/id558314921?mt=8" target="_blank" class="itunes"></a>
+<a href="https://play.google.com/store/apps/details?id=com.gyft.android" target="_blank" class="play"></a>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+<footer class="mt-5">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<p class="copy">Copyright © 2018 Gyft, Inc. All Rights Reserved.</p>
+</div>
+<div class="col-md-6">
+<ul>
+<li><a title="Gyft.com" target="_blank" href="http://gyft.com">Gyft.com</a></li>
+<li><a title="About Us" target="_blank" href="http://gyft.com/about-us/">About Us</a></li>
+<li><a title="About Us" target="_blank" href="https://support.gyft.com/hc/en-us/requests/new?ticket_form_id=66449">Contact</a></li>
+<li><a title="Privacy" target="_blank" href="http://gyft.com/privacy/">Privacy</a></li>
+<li><a title="Terms" target="_blank" href="http://gyft.com/terms-of-service/">Terms</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+</main>
