@@ -2,9 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReactiveFormsModule } from "@angular/forms";
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
-import { ReactiveFormsModule } from '@angular/forms';
+
 // Materials
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 
@@ -26,7 +26,6 @@ import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { MywalletComponent } from './mywallet/mywallet.component';
 import { MygiftcardsComponent } from './mygiftcards/mygiftcards.component';
-import { ThemeComponent } from './theme/theme.component';
 
 
 @NgModule({
@@ -37,13 +36,13 @@ import { ThemeComponent } from './theme/theme.component';
     SignupComponent,
     SigninComponent,
     MywalletComponent,
-    MygiftcardsComponent,
-    ThemeComponent
+    MygiftcardsComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,ReactiveFormsModule,
-    NgbModule, SweetAlert2Module,
+    BrowserAnimationsModule,
+    NgbModule,
+    ReactiveFormsModule,
     MatCheckboxModule,
     MatButtonModule,
     AppRoutingModule,

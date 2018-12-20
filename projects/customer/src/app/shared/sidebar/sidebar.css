@@ -1,6 +1,6 @@
 /* Fixed sidenav, full height */
-@import url("https://use.fontawesome.com/releases/v5.6.1/css/all.css");
 
+@import url("https://use.fontawesome.com/releases/v5.6.1/css/all.css");
 .ressidebar {
     width: 50%;
 }
@@ -17,28 +17,58 @@
     background-color: steelblue;
 }
 
+
 /*layout*/
-.logo{ display: flex; background: #de4b4c;align-items: center;   padding: 18px 15px;}
-.txt-grey{color: #c2c5ca;}
-.app-download img{width: 60px;}
-.app-download{font-size: 18px !important; border: 0 !important;}
-.sec-nav{    border-top: 2px solid #202832; padding: 0px 21px;}
-.txt-white{color:#fff;}
+
+.logo {
+    display: flex;
+    background: #de4b4c;
+    align-items: center;
+    padding: 18px 15px;
+}
+
+.txt-grey {
+    color: #c2c5ca;
+}
+
+.app-download img {
+    width: 60px;
+}
+
+.app-download {
+    font-size: 18px !important;
+    border: 0 !important;
+}
+
+.sec-nav {
+    border-top: 2px solid #202832;
+    padding: 0px 21px;
+}
+
+.txt-white {
+    color: #fff;
+}
 
 .pull-right {
-float: right !important;
+    float: right !important;
 }
+
 .pull-left {
-float: left !important;
+    float: left !important;
 }
-.highlightlower{
-font-size: small;
+
+.highlightlower {
+    font-size: small;
 }
+
+
 /* Optional: Style the caret down icon */
 
 .fa-caret-down {
-padding-left: 8px;
+    padding-left: 8px;
 }
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
@@ -54,7 +84,7 @@ padding-left: 8px;
 }
 
 .sidenav {
-    height: 100%;
+    /* height: 100%; */
     width: 0;
     position: fixed;
     z-index: 1;
@@ -63,17 +93,22 @@ padding-left: 8px;
     background-color: #354050;
     overflow-x: hidden;
     transition: 0.5s;
-
-}
-.sidenav > a.profile-set{ padding: 25px 9px 25px 20px; display: flex;align-items: center;}
-.sidenav > a.profile-set span{
-  font-size: 32px;
-  color:#fff;
-  font-weight: bold;
-  margin-left: 15px;
 }
 
-.sidenav > a {
+.sidenav>a.profile-set {
+    padding: 25px 9px 25px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidenav>a.profile-set span {
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.sidenav>a {
     padding: 20px 8px 20px 20px;
     text-decoration: none;
     font-size: 22px;
@@ -81,16 +116,16 @@ padding-left: 8px;
     display: block;
     transition: 0.3s;
     border-bottom: 2px solid #202832;
-        width: 295px;
+    width: 295px;
 }
 
-
 .sidenav .closebtn {
-  position: absolute;
-      right: 5px;
-      font-size: 36px;
-      float: right;
-      color: #fff;    padding: 5px;
+    position: absolute;
+    right: 5px;
+    font-size: 36px;
+    float: right;
+    color: #fff;
+    padding: 5px;
 }
 
 @media screen and (max-height: 450px) {
@@ -110,6 +145,7 @@ padding-left: 8px;
     background-color: #262626;
     padding-left: 8px;
 }
+
 mat-icon.example-icon.mat-icon.material-icons {
     padding-top: 11px;
 }
@@ -118,12 +154,12 @@ mat-icon.example-icon.mat-icon.material-icons {
 /* Some media queries for responsiveness */
 
 @media screen and (max-height: 450px) {
-    .sidenav {
+    /* .sidenav {
         padding-top: 15px;
     }
     .sidenav a {
-        font-size: 16px !important;
-    }
+        font-size: 18px;
+    } */
     .textcolor-font {
         color: white;
         font-weight: 500;
@@ -137,7 +173,7 @@ mat-icon.example-icon.mat-icon.material-icons {
 
 .navbar {
     overflow: hidden;
-   width: 100%;
+    width: 100%;
     /* background-color: #333; */
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -147,7 +183,7 @@ mat-icon.example-icon.mat-icon.material-icons {
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
 }
 
@@ -171,12 +207,11 @@ mat-icon.example-icon.mat-icon.material-icons {
     margin: 0;
     line-height: 1.3em;
 }
-a.helpbutton{
-    padding: 16px !important;
-}
+
+
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #7c4dff;
 }
 
 .dropdown-content {
@@ -202,15 +237,24 @@ a.helpbutton{
 .dropdown-content a:hover {
     background-color: #f1f1f1 !important;
 }
+
 .sidenavbar a:hover {
-    background-color: red;
+    background-color: #7c4dff;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.sidenavbar a {
+    padding: 12px ;
+    font-size: 1rem;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.navbar-brand {
+
+/* .navbar-brand {
     padding-top: 0.63125rem !important;
-    padding-bottom: .6325rem !important;
-    font-size: 16px !important; 
-}
+    padding-bottom: .6125rem !important;
+    font-size: 16px !important;
+} */
