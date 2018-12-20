@@ -11,25 +11,32 @@
     </mat-toolbar>
 </div>
 <div [class]="mobileQuery.matches ? 'ulwidthss' : 'ulwidth'">
-  <mat-toolbar class="" color='primary'>
-  <mat-toolbar-row>
-  <div class="navbar ">
-  <div class="pull-left">
-  <a class="navbar-brand textcolor-font ">GYFT</a>
-  <a class="active" [routerLink]="['/home/mywallet']">My Wallet</a>
-  <a class="" [routerLink]="['/home/mygiftcards']">Buy Gift Cards</a>
-  </div>
-  <div class="pull-right ">
-  <div class="dropdown">
-  <button class="dropbtn"><div class="highlightlower">Hi Pappie!</div> <br/> Account<i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-content">
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-  </div>
-  </div>
-  <a class="" [routerLink]="['/home/mygiftcards']">Help <i class="fa fa-question-circle"></i></a>
+    <mat-toolbar class="" color='primary'>
+        <mat-toolbar-row>
+            <div class="navbar">
+                <div class="pull-left">
+                    <a class=" textcolor-font ">GYFT</a>
+                    <a class="active" [routerLink]="['/home/mywallet']">My Wallet</a>
+                    <a class="" [routerLink]="['/home/mygiftcards']">Buy Gift Cards</a>
+                </div>
+                <div class="pull-right ">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <div class="highlightlower">Hi Pappie!</div> <br /> Account<i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"><i class="fas fa-user-alt "></i><span class="ml-3 txt-grey">Profile</span></a>
+                            <a href="#"><i class="fa fa-history "></i><span class="ml-3 txt-grey">Order History</span></a>
+                            <a href="#"><i class="fa fa-paper-plane "></i><span class="ml-3 txt-grey">Track Sent Cards</span></a>
+                            <a href="#"><i class="far fa-folder "></i><span class="ml-3 txt-grey">Archived Cards</span></a>
+                            <a href="#"><i class="fa fa-bell "></i><span class="ml-3 txt-grey">Notifications</span></a>
+                            <a href="#"><i class="fas fa-gift "></i><span class="ml-3 txt-grey">Redeem Gyft Card</span></a>
+                            <a href="#"><i class="far fa-smile "></i><span class="ml-3 txt-grey">Claim Reward Code</span></a>
+                            <a href="#"><i class="far fa-question-circle "></i><span class="ml-3 txt-grey">Help Center</span></a>
+                            <a href="#"><i class="fas fa-sign-out-alt "></i><span class="ml-3 txt-grey">Logout</span></a>
+                        </div>
+                    </div>
+                    <a class="helpbutton" [routerLink]="['/home/mygiftcards']">Help <i class="fa fa-question-circle"></i></a>
 
   </div>
 
